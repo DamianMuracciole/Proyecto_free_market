@@ -1,0 +1,141 @@
+/* parametros de estilo
+● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tipografías
+Familia: 'Roboto'
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px*/
+
+*{
+   padding: 0%;
+   margin: 0%;
+   font-family: 'Roboto', sans-serif;
+}
+
+/*establesco en body*/
+body {
+   background-color: #ebebeb;
+}
+header{
+   font-family: 'Roboto', sans-serif;
+   background-color: #EAC926;
+}
+article{
+   background-color: white;
+}
+footer {
+   text-align: center;
+   background-color: white;
+}
+/*saco el punto a una lista*/
+li {
+   list-style: none;
+}
+
+p{
+   font-size: 12px;
+}
+main{
+   width: 90%;
+}
+
+article{
+   margin: 5px 0px;
+}
+
+
+.logo_mercado_libre {
+   width: 40%;
+   padding: 20px;
+}
+
+.haburger{
+   text-align: center;
+   display: block;
+   color: white;
+   background-color: #03264C;
+   padding: 10px;
+   margin: 20px;
+   border-radius: 5px;
+   width: 30px;
+   height: 22px;
+}
+
+.banner{
+   width: 100%;
+}
+
+.imagenes_productos{
+   width: 100%;
+}
+
+.fa-truck{
+   color:#39b54a;
+
+}
+
+.descripcionGeneralArticulo{
+   border-top : 1px solid #ebebeb;
+   margin: 15px;
+}
+
+.texto_compra {
+   text-align: center;
+}
+
+.titulares {
+   font-size: 24px;
+}
+.precios {
+   font-size: 18px;
+}
+
+.descuentos {
+   font-size: 16px;
+}
+
+.descripciones {
+   font-size: 16px;
+
+}
+
+
+.icon {
+   color: blue;
+   border-radius: 5px;
+   font-size: 30px;
+   padding: 15%;
+}
+.icon p{
+   color: black;
+   font-weight: normal;
+}
+.icon h5{
+   color: black;
+   font-weight: bold;
+}
+
+@media (min-width: 361){
+   .haburger{
+      color: red;
+      display: none;
+   }
+}
+
+@media (min-width: 769){
+   .haburger{
+      color: yellow;
+      display: none;
+   }
+}
