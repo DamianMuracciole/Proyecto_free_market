@@ -22,6 +22,7 @@ Descripciones: 16px*/
    padding: 0%;
    margin: 0%;
    font-family: 'Roboto', sans-serif;
+   box-sizing: border-box; 
 }
 
 /*establesco en body*/
@@ -31,7 +32,12 @@ body {
 header{
    font-family: 'Roboto', sans-serif;
    background-color: #EAC926;
+   padding-bottom: 10px;
 }
+nav{
+   display: none;
+}
+
 article{
    background-color: white;
 }
@@ -40,7 +46,7 @@ footer {
    background-color: white;
 }
 /*saco el punto a una lista*/
-li {
+ul {
    list-style: none;
 }
 
@@ -49,25 +55,38 @@ p{
 }
 main{
    width: 90%;
+   margin: auto;
 }
 
-article{
-   margin: 5px 0px;
+.logo_mercado_liebre {
+   width: 50%;
+   padding: 10px 20px;
 }
 
-
-.logo_mercado_libre {
-   width: 40%;
-   padding: 20px;
+.buscador {
+   margin: 1%;
+}
+.buscador i{
+   font-size: 15px;
+   border: #03264C solid 1px;
+   background-color: #ebebeb;
+   border-radius: 3px;
 }
 
-.haburger{
+.tipo_de_pago{
+   margin: 10px 0px;
    text-align: center;
+}
+
+
+.hamburguer {
    display: block;
+   margin: auto;
+   border: #03264C;
    color: white;
+   text-align: center;
    background-color: #03264C;
-   padding: 10px;
-   margin: 20px;
+   padding: 5px;
    border-radius: 5px;
    width: 30px;
    height: 22px;
@@ -83,7 +102,6 @@ article{
 
 .fa-truck{
    color:#39b54a;
-
 }
 
 .descripcionGeneralArticulo{
@@ -91,12 +109,10 @@ article{
    margin: 15px;
 }
 
-.texto_compra {
-   text-align: center;
-}
-
 .titulares {
+   color: #666;
    font-size: 24px;
+   text-align: center;
 }
 .precios {
    font-size: 18px;
@@ -108,7 +124,6 @@ article{
 
 .descripciones {
    font-size: 16px;
-
 }
 
 
@@ -128,15 +143,9 @@ article{
 }
 
 @media (min-width: 361){
-   .haburger{
-      color: red;
-      display: none;
-   }
+
 }
 
 @media (min-width: 769){
-   .haburger{
-      color: yellow;
-      display: none;
-   }
+
 }
