@@ -29,33 +29,11 @@ Descripciones: 16px*/
 body {
    background-color: #ebebeb;
 }
+/* -----------todo respecto al header ---------------*/
 header{
    font-family: 'Roboto', sans-serif;
    background-color: #EAC926;
    padding-bottom: 10px;
-}
-nav{
-   display: none;
-}
-
-article{
-   background-color: white;
-}
-footer {
-   text-align: center;
-   background-color: white;
-}
-/*saco el punto a una lista*/
-ul {
-   list-style: none;
-}
-
-p{
-   font-size: 12px;
-}
-main{
-   width: 90%;
-   margin: auto;
 }
 
 .logo_mercado_liebre {
@@ -78,22 +56,43 @@ main{
    text-align: center;
 }
 
+nav{
+   /*display:none;*/
+}
+/*saco el punto a una lista*/
+nav ul li a{
+   text-decoration: none;
+   color: black;
 
-.hamburguer {
-   display: block;
-   margin: auto;
-   border: #03264C;
-   color: white;
-   text-align: center;
-   background-color: #03264C;
-   padding: 5px;
-   border-radius: 5px;
-   width: 30px;
-   height: 22px;
 }
 
+.hamburguer {
+   margin: auto;
+   color: white;
+   font-size: 24px;
+   text-align: center;
+   background-color: #03264C;
+   width: 40px;
+   padding: 6px;
+   border-radius: 5px;
+}
+/*------------  Banner entre en header y el main  ---------*/
 .banner{
    width: 100%;
+   margin: auto;
+}
+/*---------- Comienza el main ----------*/
+main{
+   width: 90%;
+   margin: auto;
+}
+
+article{
+   background-color: white;
+}
+
+p{
+   font-size: 12px;
 }
 
 .imagenes_productos{
@@ -141,7 +140,13 @@ main{
    color: black;
    font-weight: bold;
 }
+/*---------- Comienza el Footer ---------*/
+footer {
+   text-align: center;
+   background-color: white;
+}
 
+/*---------- Media Query ----------*/
 @media (min-width: 361){
 
 }
