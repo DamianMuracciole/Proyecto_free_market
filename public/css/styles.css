@@ -18,27 +18,31 @@ header{
 
 .container-sup{
    display: flex;
-   flex-wrap:wrap ;
+   flex-wrap: wrap ;
+   justify-content: space-around;
+   align-items: center;
+   padding: 30px 0px;
 }
 
 .logo_mercado_liebre {
    width: 44%;
-   margin: 5% 1% 5% 5%;
+   max-width: 250px;
 }
 
-.finder {
+.searcher {
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
    text-align: center;
    font-size: 16px;
-   text-align: center;
    width: 44%;
-   margin: 5% 5% 5% 1%;
+   max-width: 200px;
+   height: 40px;
    background-color: #fff;
-   border-radius: 3% / 9%;
+   border-radius: 5px;
 }
 
-.finder i{
-   border: #03264C solid 1px;
-   background-color: #ebebeb;
+.searcher i{
    border-radius: 3px;
 }
 
@@ -47,8 +51,12 @@ header{
    width: 100%;
    margin: 10px 0px;
    text-align: center;
+   max-width: 300px;
 }
 
+.container-menu{
+   padding: 0% 4%;
+}
 .pruductos_navbar,
 .user_navbar{
    display:none;
@@ -59,6 +67,7 @@ header{
 nav ul li a{
    text-decoration: none;
    color: black;
+   padding: 0px 8px;
 }
 
 .hamburguer {
@@ -131,7 +140,6 @@ main section article div i {
 .titulares {
    font-size: 24px;
    color: #666;
-
    margin: 1em;
 }
 
@@ -160,7 +168,6 @@ main section article div i {
 }
 
 .descripciones {
-   te
    font-size: 16px;
    display: none;
 }
@@ -222,11 +229,16 @@ footer {
    article{
       width: 22%;
    }
+
+   .container-menu nav{
+      display: flex;
+      justify-content: space-between;
+   }
    .user_navbar,
    .pruductos_navbar{
-      display: block;
-   }
+      display: flex;
 
+   }
    .hamburguer{
       display: none;
    }
