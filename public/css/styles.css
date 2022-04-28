@@ -85,7 +85,8 @@ nav ul li a{
    width: 100%;
    margin: auto;
 }
-/*---------- Comienza el main ----------*/
+/*---------- Comienza el main  ----------*/
+/* de home.html*/
 main{
    width: 90%;
    margin: auto;
@@ -172,6 +173,14 @@ main section article div i {
    display: none;
 }
 
+/* de login.html */
+.lg .nombre_lg{
+   width: 70%;
+   height: 20px;
+   background-color: #ebebeb;
+   border-radius: 10px;
+}
+
 /*---------- Comienza el Footer ---------*/
 footer {
    text-align: center;
@@ -215,11 +224,21 @@ footer {
 /*para tablets*/
 @media (min-width: 360px){
    article{
-      box-shadow: 0px 0px 10px rgb(100,100,100);
+      /*box-shadow: 0px 0px 10px rgb(100,100,100);*/
       width: 44%;
    }
    .descripciones{
       display: block;
+      visibility: hidden;
+   }
+
+   .card:hover{
+
+      box-shadow: 0px 0px 10px rgb(100,100,100);
+   }
+
+   .card:hover .descripciones{
+      visibility: visible;
    }
 
 
