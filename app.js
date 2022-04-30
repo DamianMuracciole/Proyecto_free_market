@@ -18,7 +18,7 @@ app.get('/',(req,res) => {
 });
 
 //llamo al archivo html para verlo desded el puerto 
-app.get('/lala',(req,res) => {
+app.get('/register',(req,res) => {
     res.sendFile(path.resolve(__dirname,'./views/register.html'))
 });
 

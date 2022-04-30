@@ -173,12 +173,85 @@ main section article div i {
    display: none;
 }
 
-/* de login.html */
-.nombre_lg{
+/* ---------- de login.html -----------*/
+.campo-lgn{
+   text-align: center;
+}
+
+.nombre-lgn,
+.submit-lgn{
+   border: 0ch;
+   font-size: 16px;
+   padding: 12px;
+   margin: 30px auto;
    width: 70%;
-   height: 20px;
-   background-color: #ebebeb;
-   border-radius: 10px;
+   max-width: 600px;
+   border-radius: 5px;
+}
+
+.nombre-lgn{
+   background-color: white;
+}
+
+.submit-lgn{
+   background-color: #03264C;
+   color: #ebebeb;
+}
+
+/* ---------- de register.html -----------*/
+.campo-rgtr{
+   text-align: center;
+}
+
+.nombre-rgtr,
+.submit-rgtr,
+.reset-rgtr{
+   font-size: 14px;
+   width: 70%;
+   max-width: 600px;
+   padding: 12px;
+   border: 0ch;
+   margin: 12px auto;
+   border-radius: 5px;
+}
+
+.nombre-rgtr{
+   background-color: white;
+}
+
+.submit-rgtr,
+.reset-rgtr{
+   background-color: #03264C;
+   color: #ebebeb;
+   max-width: 300px;
+}
+
+.titles-rgtr{
+   font-size: 16px;
+   font-weight: bolder;
+   padding: 12px 0px;
+   margin: 0px auto;
+   margin-top: 15px;
+   width: 70%;
+   max-width: 600px;
+}
+
+
+
+
+
+
+
+.opciones-rgtr{
+   display: block;
+   margin: 15px auto;
+   width: 70%;
+   max-width: 600px;
+   padding-left: 10px;
+   
+}
+.items-rgtr{
+   padding: 0% 15px 0px 30px;
 }
 
 /*---------- Comienza el Footer ---------*/

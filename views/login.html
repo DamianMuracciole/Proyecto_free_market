@@ -42,8 +42,8 @@
                 </ul>
 
                 <ul class="user_navbar">
-                    <li><a href="#">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-                    <li><a href="#">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a href="/register">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
                     <li><a href="#">Mis compras <i class="fa-solid fa-basket-shopping"></i></a></li>        
                 </ul>
             </nav>
@@ -57,18 +57,16 @@
     <!-- ******* MAIN ******* -->
     <main>
         <form action="/" method="post">
-            <div class="nombre_lg">
-                <label for="nickname">Nombre de usuari@: </label>
-                <input type="text" name="nickname" placeholder="'Ej:Juanchu'" required>
+            <div class="campo-lgn">
+                <input type="text" name="nickname" placeholder="Nombre de usuari@" class="nombre-lgn"required >
             </div>
 
-            <div class="nombre_lg">
-                <label for="password">Contraseña </label>
-                <input type="password" name="password" minlength="6" maxlength="12" required>
+            <div class="campo-lgn">
+                <input type="password" name="password" minlength="6" maxlength="12" placeholder="Elegí tu contraseña" class="nombre-lgn" required>
             </div>
 
-            <div class="submit_lg">
-                <button type="submit" >Enviar</button>
+            <div class="campo-lgn">
+                <input type="submit" value="Enviar" class="submit-lgn" >
             </div>
         </form>
     </main>
