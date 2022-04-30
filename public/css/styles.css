@@ -21,42 +21,59 @@ header{
    flex-wrap: wrap ;
    justify-content: space-around;
    align-items: center;
-   padding: 30px 0px;
+   padding: 10px 0px 10px 0px;
 }
 
 .logo_mercado_liebre {
+   display: block;
    width: 44%;
-   max-width: 250px;
+   max-width: 330px;
+   padding: 2%;
 }
 
 .searcher {
    display: flex;
-   justify-content:space-around;
+   width: 44%;
+   max-width: 210px;
+   color:#666;
+   justify-content:center;
    align-items: center;
    text-align: center;
-   font-size: 16px;
-   width: 44%;
-   max-width: 220px;
-   height: 40px;
+   font-size: 14px;
    background-color: #fff;
    border-radius: 5px;
+   padding: 2%;
+   border: 0px;
 }
 
 .searcher i{
    border-radius: 3px;
+   padding-left: 2%;
+}
+.searcher input{
+   border: 0ch;
+   border-radius: 5px;
 }
 
 .tipo_de_pago{
+   display: block;
    font-size: 14px;
-   width: 100%;
-   margin: 10px 0px;
+   padding: 2%;
    text-align: center;
-   max-width: 300px;
 }
+
+
+
+
+
+
+
+
 
 .container-menu{
    padding: 0% 4%;
 }
+
 .pruductos_navbar,
 .user_navbar{
    display:none;
@@ -109,7 +126,18 @@ article{
    display: block;
 }
 
-main section article div i {
+.imagenes-productos{
+   width: 100%;
+}
+
+.descripcion-general-articulo{
+   display: block;
+   border-top : 1px solid #ebebeb;
+   padding: 15px;
+   position: relative;
+}
+
+.fa-truck{
    display: block;
    color: #39b54a;
    font-size: 16px;
@@ -119,42 +147,37 @@ main section article div i {
    border: 1px solid #39b54a;
    background-color: #fff;
    border-radius: 50%;
-   position: relative;
-   left: 90%;
-   top: -30px;
+   position: absolute;
+   right: 20px;
+   top: -15px;
+
 }
 
-.imagenes_productos{
-   width: 100%;
+.fa-truck:hover{
+   transition: 0.3s;
+   rotate: -90deg;
 }
 
-.descripcionGeneralArticulo{
-   border-top : 1px solid #ebebeb;
-   padding: 15px;
-}
-
-
-.cuerpo_texto{
+.cuerpo-texto{
    font-size: 12px;
 }
 
-.titulares {
+.titulares{
    font-size: 24px;
    color: #666;
-   margin: 1em;
+   margin: 1em 0px;
 }
 
-.precios_descuentos{
+.precios-descuentos{
    margin-bottom: 10%;
    display: flex;
    flex-wrap: wrap;
    align-items: baseline;
 }
 
-.precios_descuentos > p{
+.precios-descuentos > p{
    display: flex;
 }
-
 
 .precios {
    font-size: 18px;
@@ -198,6 +221,10 @@ main section article div i {
    color: #ebebeb;
 }
 
+.submit-lgn:hover{
+   background-color: #0022aa;
+}
+
 /* ---------- de register.html -----------*/
 .campo-rgtr{
    text-align: center;
@@ -230,16 +257,21 @@ main section article div i {
    font-size: 16px;
    font-weight: bolder;
    padding: 12px 0px;
-   margin: 0px auto;
+   margin:auto;
    margin-top: 15px;
    width: 70%;
    max-width: 600px;
 }
 
-
-
-
-
+.date-rgtr{
+   font-size: 14px;
+   width: 70%;
+   max-width: 600px;
+   padding: 12px;
+   border: 0ch;
+   margin: 12px auto;
+   border-radius: 5px;
+}
 
 
 .opciones-rgtr{
@@ -250,6 +282,7 @@ main section article div i {
    padding-left: 10px;
    
 }
+
 .items-rgtr{
    padding: 0% 15px 0px 30px;
 }
@@ -262,8 +295,12 @@ footer {
    color: #666;
 }
 
+.descripcion-footer{
+   display: block;
+}
+
 .icon {
-   font-size: 2em;
+   font-size: 24px;
    margin-bottom: 60px;
 }
 
@@ -271,6 +308,10 @@ footer {
    color: #03264C;
    margin-bottom: 10px;
    
+}
+
+.icon i:hover{
+   color:#0022aa;
 }
 
 .footer_titulo{
@@ -306,7 +347,6 @@ footer {
    }
 
    .card:hover{
-
       box-shadow: 0px 0px 10px rgb(100,100,100);
    }
 
@@ -317,11 +357,39 @@ footer {
 
 }
 /*para desktops*/
-@media (min-width: 769px){
-   article{
-      width: 22%;
+@media (min-width: 768px){
+
+
+   /* header: barra superior*/
+
+   .logo_mercado_liebre {
+      width: 35%;
+      max-width: 400px;
+      padding: 2%;
+   }
+   
+   .searcher {
+      width: 30%;
+      max-width: 360px;
+      padding: 20px;
+      height: 30px;
+   }
+   .searcher input{
+      width: 90%;
+   }
+      
+   .tipo_de_pago{
+      width: 35%;
+      max-width: 400px;
+      font-size: 14px;
+      padding: 20px;
    }
 
+   .hamburguer{
+      display: none;
+   }
+
+   /*headeer: barra inferior*/
    .container-menu nav{
       display: flex;
       justify-content: space-between;
@@ -331,7 +399,15 @@ footer {
       display: flex;
 
    }
-   .hamburguer{
-      display: none;
+
+   /*  body    */
+   article{
+      width: 22%;
+   }
+
+   /*  Footer   */
+   .descripcion-footer{
+      display: flex;
+      padding: 40px;
    }
 }
