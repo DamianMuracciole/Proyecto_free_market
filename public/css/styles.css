@@ -150,12 +150,11 @@ article{
    position: absolute;
    right: 20px;
    top: -15px;
-
 }
 
 .fa-truck:hover{
    transition: 0.3s;
-   rotate: -90deg;
+   transform: rotate(-90deg);
 }
 
 .cuerpo-texto{
